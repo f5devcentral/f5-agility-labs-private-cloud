@@ -10,7 +10,7 @@ Also note only one self-ip in Route Domain 0.
 
     |image20|
 
-From Chrome do a forced refresh of the Horizon page (Shift+[Reload]).
+Switch back to the OpenStack Horizon tab inside Chrome and do a forced refresh (Shift+[Reload]).
 
 You should now see a new menu item under “Network”.
 
@@ -90,8 +90,8 @@ partition was created.
     |image24|
 
 Change to that partition and inspect the Self IPs items under Network.
-You should see a VXLAN tunnel that was created to connect to the tenant
-network.
+You should see that a VXLAN tunnel that was created connected to the tenant network.  Verify the tenant network is the internal network from viewing the ``neutron subnet-list`` command you ran in the previous lab.
+
 
     |image25|
 
@@ -100,8 +100,9 @@ via the Horizon Panel.
 
     |image26|
 
-Observe that the Pool name uses the OpenStack Pool ID (yours will differ
-in value from the example).
+Observe that the BIG-IP Pool name uses the OpenStack Pool ID from the load balancer configuration.  Horizon>Network>Load Balancers>lb1>Listeners>Listener 1 – Default Pool ID 
+
+(yours will differ in value from the example).
 
     |image27|
 

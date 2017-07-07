@@ -8,7 +8,7 @@ First Launch Putty from the Desktop.
 
     |image1|
 
-Click on “OpenStack All-In-One” then click “Open”.
+Click on “OpenStack All-In-One”, select load, then click “Open”.
 
     |image2|
 
@@ -17,16 +17,20 @@ should see.
 
     |image3|
 
-Type “. keystonerc\_demo” (period keystonerc\_demo). The prompt should
+Type ``source keystonerc_demo``. The prompt should
 change from:
+
+.. code-block:: console
 
     [student@openstack ~]$
 
 To:
 
-    [student@openstack ~(keystone\_demo)]$
+.. code-block:: console
 
-Run “neutron subnet-list” and you should see
+    [student@openstack ~(keystone_demo)]$
+
+Run ``neutron subnet-list`` and you should see
 
     |image4|
 

@@ -1,13 +1,11 @@
 Getting Started
 ---------------
 
-During this lab you will learn about deploying BIG-IP outside of an
-OpenStack install using an undercloud deployment with LBaaS. You will
-learn about:
+During this lab you will learn how to:
 
-- Installing the F5 LBaaS Agent
-- Deploying Basic L4-L7 services using LBaaS
-- Deploying enhanced L4-L7 services using ESD.
+- Install the F5 LBaaS Agent
+- Deploy Basic L4-L7 services using LBaaS
+- Deploy enhanced L4-L7 services using ESD.
 
 About OpenStack
 ~~~~~~~~~~~~~~~
@@ -47,17 +45,17 @@ OpenStack Nova. In this scenario the BIG-IP is in a similar topology to
 other tenant virtual machines. When deploying in overcloud OpenStack
 HEAT templates (automation templates) are commonly used to deploy the
 BIG-IP device. A customer can manage the BIG-IP device through
-traditional, HEAT templates, and/or other automation templates.
+traditional methods, HEAT templates, and/or other automation templates.
 
 It is also possible to deploy a BIG-IP VE in an overcloud deployment and
-use LBaaS. In this deployment you are currently limited by the number of
-interfaces that the BIG-IP can use (10).
+use LBaaS. In this deployment you are limited by the number of
+interfaces currently supported on BIG-IP VE can use (9 data & 1 mgmt).
 
 Under or Over?
 ~~~~~~~~~~~~~~
 
 The decision to use one method or both will depend on customer
-requirements. An undercloud deployment using LBaaS is well suite to
+requirements. An undercloud deployment using LBaaS is well suited to
 providing basic services that can be provided in a multi-tenant manner.
 Overcloud is well suited to providing access to features and functions
 that may not be exposed via LBaaS or provide per-tenant services.
@@ -69,7 +67,7 @@ The current Lab Environment looks like the following:
 
 |image0|
 
-You will be connecting via RDP to the Windows host to perform all the
+You will be connecting via RDP to a Windows host to perform all the
 steps in this lab.
 
 Lab Components

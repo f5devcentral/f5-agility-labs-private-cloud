@@ -33,7 +33,7 @@ Click on the “+” next to “m1.tiny”. Then click next.
 
     |image12|
 
-Click on the “+” next to “internal” Network. Then click on next TWICE
+Click on the “+” next to “internal” Network. This step should have been completed for you since the internal network is the only network available.  Then click on next TWICE
 until you are on the Security Groups tab.
 
     |image13|
@@ -44,7 +44,7 @@ Then click next.
     |image14|
 
 Click on the “+” next to “demo-key-pair” and the click on “Launch
-Instance”.
+Instance”.  This step should have been completed for you since the demo-key-pair is the only available key pair.
 
     |image15|
 
@@ -52,14 +52,10 @@ You should now see them starting.
 
     |image16|
 
-Clicking on “server-1” then “Log” you should see
+Once the instance status is "active" on “server-1” then “Log” you should see
 
     |image17|
 
-In this lab environment OpenStack is running in a nested environment.
-This will cause the
-
-.. TODO:: sentence above is incomplete
 
 .. |image5| image:: /_static/image7.png
 .. |image6| image:: /_static/image8.png
