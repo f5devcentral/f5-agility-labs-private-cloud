@@ -5,10 +5,10 @@
 # ------------
 #
 # REQUIRED: Your class/lab name
-classname = "F5 Architectures for Private Cloud Infrastructures - OpenStack - Class 164"
+classname = "F5 Private Cloud Solutions - OpenStack"
 
 # OPTIONAL: The URL to the GitHub Repository for this class
-github_repo = "https://github.com/f5devcentral/f5-training-labs"
+github_repo = "https://github.com/f5devcentral/f5-agility-labs-openstack"
 
 # OPTIONAL: Google Analytics
 # googleanalytics_id = 'UA-85156643-4'
@@ -21,8 +21,13 @@ import os
 import sys
 import time
 import re
+import pkgutil
+import string
 sys.path.insert(0, os.path.abspath('.'))
 import f5_sphinx_theme
+
+year = time.strftime("%Y")
+eventname = "Agility %s Hands-on Lab Guide" % (year)
 
 rst_prolog = """
 .. |classname| replace:: %s
@@ -50,12 +55,12 @@ rst_prolog = """
 """ % (classname,
        classname,
        classname,
-       time.strftime("%Y"))
+       year)
 
 if 'github_repo' in locals() and len(github_repo) > 0:
     rst_prolog += """
 .. |repoinfo| replace:: The content contained here leverages a full DevOps CI/CD
-              pipieline and is sourced from the GitHub repository at %s.
+              pipeline and is sourced from the GitHub repository at %s.
               Bugs and Requests for enhancements can be made using by
               opening an Issue within the repository.
 """ % (github_repo)
@@ -86,6 +91,21 @@ extensions = [
 if 'googleanalytics_id' in locals() and len(googleanalytics_id) > 0:
   extensions += ['sphinxcontrib.googleanalytics']
   googleanalytics_enabled = True
+
+eggs_loader = pkgutil.find_loader('sphinxcontrib.spelling')
+found = eggs_loader is not None
+
+if found:
+  extensions += ['sphinxcontrib.spelling']
+  spelling_lang='en_US'
+  spelling_word_list_filename='../wordlist'
+  spelling_show_suggestions=True
+  spelling_ignore_pypi_package_names=False
+  spelling_ignore_wiki_words=True
+  spelling_ignore_acronyms=True
+  spelling_ignore_python_builtins=True
+  spelling_ignore_importable_modules=True
+  spelling_filters=[]
 
 source_parsers = {
    '.md': 'recommonmark.parser.CommonMarkParser',
@@ -135,7 +155,6 @@ pygments_style = 'sphinx'
 todo_emit_warnings = True
 todo_include_todos = True
 
-
 # -- Options for HTML output ----------------------------------------------
 
 # The theme to use for HTML and HTML Help pages.  See the documentation for
@@ -176,22 +195,37 @@ htmlhelp_basename =  cleanname + 'doc'
 
 # -- Options for LaTeX output ---------------------------------------------
 
+front_cover_image = 'front_cover'
+back_cover_image = 'back_cover'
+
+front_cover_image_path = os.path.join('_static', front_cover_image + '.png')
+back_cover_image_path = os.path.join('_static', back_cover_image + '.png')
+
+latex_additional_files = [front_cover_image_path, back_cover_image_path]
+
+template = string.Template(open('preamble.tex').read())
+
+latex_contents = r"""
+\frontcoverpage
+\contentspage
+"""
+
+backcover_latex_contents = r"""
+\backcoverpage
+"""
+
 latex_elements = {
-    # The paper size ('letterpaper' or 'a4paper').
-    #
-    # 'papersize': 'letterpaper',
+    'papersize': 'letterpaper',
+    'pointsize': '10pt',
+    'fncychap': r'\usepackage[Bjornstrup]{fncychap}',
+    'preamble': template.substitute(eventname=eventname,
+                                    project=project,
+                                    author=author,
+                                    frontcoverimage=front_cover_image,
+                                    backcoverimage=back_cover_image),
 
-    # The font size ('10pt', '11pt' or '12pt').
-    #
-    # 'pointsize': '10pt',
-
-    # Additional stuff for the LaTeX preamble.
-    #
-    # 'preamble': '',
-
-    # Latex figure (float) alignment
-    #
-    # 'figure_align': 'htbp',
+    'tableofcontents': latex_contents,
+    'printindex': backcover_latex_contents
 }
 
 # Grouping the document tree into LaTeX files. List of tuples
@@ -199,9 +233,8 @@ latex_elements = {
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
     (master_doc, '%s.tex' % cleanname, u'%s Documentation' % classname,
-     u'F5 Networks, Inc.', 'manual'),
+     u'F5 Networks, Inc.', 'manual', True),
 ]
-
 
 # -- Options for manual page output ---------------------------------------
 
