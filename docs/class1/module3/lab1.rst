@@ -42,5 +42,8 @@ Policies, client/server SSL profiles, and modify session persistence.
 .. |image34| image:: /_static/image36.png
   :scale: 50%
 .. |image35| image:: /_static/image37.png
+  :scale: 50%
 .. |image36| image:: /_static/image38.png
+  :scale: 50%
 .. |image37| image:: /_static/image39.png
+  :scale: 50%
