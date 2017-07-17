@@ -40,6 +40,7 @@ In addition to TCP profiles you can also add iRules, Local Traffic
 Policies, client/server SSL profiles, and modify session persistence.
 
 .. |image34| image:: /_static/image36.png
+  :scale: 50%
 .. |image35| image:: /_static/image37.png
 .. |image36| image:: /_static/image38.png
 .. |image37| image:: /_static/image39.png

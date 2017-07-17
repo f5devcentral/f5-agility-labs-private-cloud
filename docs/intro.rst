@@ -106,5 +106,6 @@ lab and access your jump host.
    required.
 
 .. |image0| image:: /_static/image2.png
+  :scale: 50%
 
 

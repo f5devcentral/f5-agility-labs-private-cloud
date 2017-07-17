@@ -42,4 +42,6 @@ There should be a table that contains the following information.
 +------------------------+---------+--------------------+----------------------+
 
 .. |image18| image:: /_static/image20.png
+  :scale: 50%
 .. |image19| image:: /_static/image21.png
+  :scale: 50%
