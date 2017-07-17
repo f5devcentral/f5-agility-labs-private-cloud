@@ -16,7 +16,13 @@ Change your directory by typing ``cd f5-openstack-ansible/playbooks``
 
   [student@openstack ~]$cd f5-openstack-ansible/playbooks/
 
-Now run ``ansible-playbook -i hosts --extra-vars '{"remote_user":"student"}' agent_driver_deploy.yaml``
+Now run 
+
+.. code-block:: console
+
+  ansible-playbook -i hosts --extra-vars '{"remote_user":"student"}' agent_driver_deploy.yaml
+
+You should see.
 
 |image18|
 
