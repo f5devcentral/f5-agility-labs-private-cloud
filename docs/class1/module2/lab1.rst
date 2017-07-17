@@ -24,7 +24,7 @@ then click on “+Create Load Balancer”.
 
 Complete the following information.
 
-Load Balancer Details
+**Load Balancer Details**
 
 +----------+-------------------+
 | name     | value             |
@@ -33,10 +33,9 @@ Load Balancer Details
 +----------+-------------------+
 | Subnet   | internal-subnet   |
 +----------+-------------------+
-|          |                   |
-+----------+-------------------+
 
-Listener Details
+
+**Listener Details**
 
 +------------+-------------+
 | name       | value       |
@@ -48,7 +47,7 @@ Listener Details
 | Port       | 80          |
 +------------+-------------+
 
-Pool Details
+**Pool Details**
 
 +----------+----------------+
 | name     | value          |
@@ -57,10 +56,8 @@ Pool Details
 +----------+----------------+
 | Method   | ROUND\_ROBIN   |
 +----------+----------------+
-|          |                |
-+----------+----------------+
 
-Pool Members
+**Pool Members**
 
 +------------+--------+
 | name       | port   |
@@ -69,10 +66,8 @@ Pool Members
 +------------+--------+
 | server-2   | 80     |
 +------------+--------+
-|            |        |
-+------------+--------+
 
-Monitor type
+**Monitor type**
 
 +----------------+---------+
 | name           | value   |
@@ -135,8 +130,10 @@ being load balanced.
 +=============+=============+
 +-------------+-------------+
 
-.. |image20| image:: /_static/image22.png
+.. |image20| image:: /_static/image22.png  
+  :scale: 50%
 .. |image21| image:: /_static/image23.png
+  :scale: 50%
 .. |image22| image:: /_static/image24.png
 .. |image23| image:: /_static/image25.png
 .. |image24| image:: /_static/image26.png

@@ -13,8 +13,11 @@ Observe that it is using the default TCP profile.
 
 From your Putty window run.
 
-| neutron lbaas-l7policy-create --listener listener1 \\
-| --name esd\_demo\_3 --action REJECT
+.. code-block:: console
+
+  neutron lbaas-l7policy-create --listener listener1 --name esd_demo_3 --action REJECT
+
+You should see the following output.
 
     |image35|
 
@@ -25,7 +28,9 @@ has changed.
 
 Now from your Putty window run.
 
-cat /etc/neutron/services/f5/esd/demo.json
+.. code-block:: console
+
+  cat /etc/neutron/services/f5/esd/demo.json
 
 You will see the definition that we referenced earlier.
 

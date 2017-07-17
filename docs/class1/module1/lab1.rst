@@ -1,8 +1,14 @@
+.. _verify_openstack:
+
 Login to OpenStack CLI
 ----------------------
 
+
+
 Verify OpenStack environment
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+The first exercise is to use the OpenStack CLI to verify the environment.
 
 First Launch Putty from the Desktop.
 

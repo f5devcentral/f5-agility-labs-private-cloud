@@ -1,10 +1,13 @@
 Deploying Basic L4-L7 Services using LBaaS
 ==========================================
 
-.. TODO:: Needs module description
+There's multiple ways of provisioning F5 Services via OpenStack LBaaS including.
 
-In this module you will learn how to install a |f5| |bip| Applicance into your
-datacenter.
+#. Horizon GUI
+#. CLI
+#. OpenStack API
+
+Today we will be covering the first two options.
 
 .. toctree::
    :maxdepth: 1

@@ -1,6 +1,8 @@
 Deploy Backend Instances
 ------------------------
 
+During the previous excercise we made use of the OpenStack CLI.  OpenStack also has a web gui, Horizon, that can be used.  The following will deploy two backend web servers that will be used later in the lab.
+
 Launch Google Chrome and click on the “Login – OpenStack…” bookmark.
 
     |image5|
@@ -60,7 +62,9 @@ Once the instance status is "active" on “server-1” then “Log” you should
 .. |image5| image:: /_static/image7.png
 .. |image6| image:: /_static/image8.png
 .. |image7| image:: /_static/image9.png
+  :scale: 50%
 .. |image8| image:: /_static/image10.png
+  :scale: 50%
 .. |image9| image:: /_static/image11.png
 .. |image10| image:: /_static/image12.png
 .. |image11| image:: /_static/image13.png
@@ -69,4 +73,5 @@ Once the instance status is "active" on “server-1” then “Log” you should
 .. |image14| image:: /_static/image16.png
 .. |image15| image:: /_static/image17.png
 .. |image16| image:: /_static/image18.png
+  :scale: 50%
 .. |image17| image:: /_static/image19.png

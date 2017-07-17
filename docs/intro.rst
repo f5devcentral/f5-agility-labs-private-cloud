@@ -97,8 +97,6 @@ components:
 Connecting to the Lab Environment
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. TODO:: Complete lab connection instructions
-
 Please follow the instructions provided by the instructor to start your
 lab and access your jump host.
 

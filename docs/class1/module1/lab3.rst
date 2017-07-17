@@ -3,12 +3,12 @@ Install Driver/Agent
 
 Complete directions for installing the Driver/Agent can be found at: http://f5-openstack-lbaasv2-driver.readthedocs.io/en/mitaka/map_quick-start-guide.html
 
-During this lab we will be using Ansible to automate the installation.
+During this lab we will be using Ansible (a Systems/Network automation tool) to automate the installation.  The Ansible module that is being used in this lab can be found at: https://github.com/f5devcentral/f5-openstack-ansible
 
 Install via Ansible
 ~~~~~~~~~~~~~~~~~~~
 
-Open your Putty Window (Directions in Lab 1.1 if you closed the Window).
+Open your Putty Window (Directions in :ref:`verify_openstack` if you closed the Window).
 
 Change your directory by typing ``cd f5-openstack-ansible/playbooks``
 

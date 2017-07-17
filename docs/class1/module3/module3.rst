@@ -1,10 +1,8 @@
 Deploying Enhanced L4-L7 Services using ESD
 ===========================================
 
-.. TODO:: Needs module description
+LBaaS only provides a subset of the capabilities of an F5 BIG-IP.  The following exercise will demonstrate how to provide a way to extend LBaaS through the use of custom policies.
 
-In this module you will learn how to install a |f5| |bip| Applicance into your
-datacenter.
 
 .. toctree::
    :maxdepth: 1
