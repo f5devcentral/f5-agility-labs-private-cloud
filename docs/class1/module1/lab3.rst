@@ -47,6 +47,13 @@ There should be a table that contains the following information.
 | Loadbalancerv2 agent   | :-)     | True               | f5-oslbaasv2-agent   |
 +------------------------+---------+--------------------+----------------------+
 
+Now type ``source keystonerc_demo`` to restore your prompt to the demo user.
+
+.. code-block:: console
+
+    [student@openstack ~(keystone_demo)]$
+
+
 .. |image18| image:: /_static/image20.png
   :scale: 50%
 .. |image19| image:: /_static/image21.png
