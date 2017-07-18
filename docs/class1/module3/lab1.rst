@@ -9,7 +9,7 @@ profiles that we created on our first listener.
 First take a look at the existing TCP configuration on the BIG-IP.
 Observe that it is using the default TCP profile.
 
-    |image34|
+|image34|
 
 From your Putty window run.
 
@@ -19,12 +19,12 @@ From your Putty window run.
 
 You should see the following output.
 
-    |image35|
+|image35|
 
 Refresh your window on the BIG-IP and you will see that the TCP profile
 has changed.
 
-    |image36|
+|image36|
 
 Now from your Putty window run.
 
@@ -34,7 +34,7 @@ Now from your Putty window run.
 
 You will see the definition that we referenced earlier.
 
-    |image37|
+|image37|
 
 In addition to TCP profiles you can also add iRules, Local Traffic
 Policies, client/server SSL profiles, and modify session persistence.

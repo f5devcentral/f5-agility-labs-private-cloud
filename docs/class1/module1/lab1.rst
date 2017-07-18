@@ -12,33 +12,32 @@ The first exercise is to use the OpenStack CLI to verify the environment.
 
 First Launch Putty from the Desktop.
 
-    |image1|
+|image1|
 
 Click on “OpenStack All-In-One”, select load, then click “Open”.
 
-    |image2|
+|image2|
 
 If you fail to connect on the first try, try again. When you connect you
 should see.
 
-    |image3|
+|image3|
 
-Type ``source keystonerc_demo``. The prompt should
-change from:
+Type ``source keystonerc_demo``. The prompt should change from:
 
 .. code-block:: console
 
-    [student@openstack ~]$
+   [student@openstack ~]$
 
 To:
 
 .. code-block:: console
 
-    [student@openstack ~(keystone_demo)]$
+   [student@openstack ~(keystone_demo)]$
 
 Run ``neutron subnet-list`` and you should see
 
-    |image4|
+|image4|
 
 Please ask for assistance if you do not see the correct output. Leave
 this window open, it will be used throughout the lab.
