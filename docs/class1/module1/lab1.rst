@@ -3,8 +3,6 @@
 Login to OpenStack CLI
 ----------------------
 
-
-
 Verify OpenStack environment
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -42,11 +40,11 @@ Run ``neutron subnet-list`` and you should see
 Please ask for assistance if you do not see the correct output. Leave
 this window open, it will be used throughout the lab.
 
-.. |image1| image:: /_static/image3.png
-  :scale: 50%
-.. |image2| image:: /_static/image4.png
-  :scale: 50%
-.. |image3| image:: /_static/image5.png
-  :scale: 50%
-.. |image4| image:: /_static/image6.png
-  :scale: 50%
+.. |image1| image:: /_static/class1/image3.png
+   :scale: 50%
+.. |image2| image:: /_static/class1/image4.png
+   :scale: 50%
+.. |image3| image:: /_static/class1/image5.png
+   :scale: 50%
+.. |image4| image:: /_static/class1/image6.png
+   :scale: 50%

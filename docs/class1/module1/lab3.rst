@@ -54,7 +54,7 @@ Now type ``source keystonerc_demo`` to restore your prompt to the demo user.
     [student@openstack ~(keystone_demo)]$
 
 
-.. |image18| image:: /_static/image20.png
-  :scale: 50%
-.. |image19| image:: /_static/image21.png
-  :scale: 50%
+.. |image18| image:: /_static/class1/image20.png
+   :scale: 50%
+.. |image19| image:: /_static/class1/image21.png
+   :scale: 50%

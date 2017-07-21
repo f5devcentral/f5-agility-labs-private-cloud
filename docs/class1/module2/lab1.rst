@@ -128,31 +128,31 @@ being load balanced.
 | |image32|   | |image33|   |
 +-------------+-------------+
 
-.. |image20| image:: /_static/image22.png
-  :scale: 50%
-.. |image21| image:: /_static/image23.png
-  :scale: 50%
-.. |image22| image:: /_static/image24.png
-  :scale: 50%
-.. |image23| image:: /_static/image25.png
-  :scale: 50%
-.. |image24| image:: /_static/image26.png
-  :scale: 50%
-.. |image25| image:: /_static/image27.png
-  :scale: 50%
-.. |image26| image:: /_static/image28.png
-  :scale: 50%
-.. |image27| image:: /_static/image29.png
-  :scale: 50%
-.. |image28| image:: /_static/image30.png
-  :scale: 50%
-.. |image29| image:: /_static/image31.png
-  :scale: 50%
-.. |image30| image:: /_static/image32.png
-  :scale: 50%
-.. |image31| image:: /_static/image33.png
-  :scale: 50%
-.. |image32| image:: /_static/image34.png
-  :scale: 50%
-.. |image33| image:: /_static/image35.png
-  :scale: 50%
+.. |image20| image:: /_static/class1/image22.png
+   :scale: 50%
+.. |image21| image:: /_static/class1/image23.png
+   :scale: 50%
+.. |image22| image:: /_static/class1/image24.png
+   :scale: 50%
+.. |image23| image:: /_static/class1/image25.png
+   :scale: 50%
+.. |image24| image:: /_static/class1/image26.png
+   :scale: 50%
+.. |image25| image:: /_static/class1/image27.png
+   :scale: 50%
+.. |image26| image:: /_static/class1/image28.png
+   :scale: 50%
+.. |image27| image:: /_static/class1/image29.png
+   :scale: 50%
+.. |image28| image:: /_static/class1/image30.png
+   :scale: 50%
+.. |image29| image:: /_static/class1/image31.png
+   :scale: 50%
+.. |image30| image:: /_static/class1/image32.png
+   :scale: 50%
+.. |image31| image:: /_static/class1/image33.png
+   :scale: 50%
+.. |image32| image:: /_static/class1/image34.png
+   :scale: 50%
+.. |image33| image:: /_static/class1/image35.png
+   :scale: 50%

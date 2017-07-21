@@ -39,11 +39,11 @@ You will see the definition that we referenced earlier.
 In addition to TCP profiles you can also add iRules, Local Traffic
 Policies, client/server SSL profiles, and modify session persistence.
 
-.. |image34| image:: /_static/image36.png
-  :scale: 50%
-.. |image35| image:: /_static/image37.png
-  :scale: 50%
-.. |image36| image:: /_static/image38.png
-  :scale: 50%
-.. |image37| image:: /_static/image39.png
-  :scale: 50%
+.. |image34| image:: /_static/class1/image36.png
+   :scale: 50%
+.. |image35| image:: /_static/class1/image37.png
+   :scale: 50%
+.. |image36| image:: /_static/class1/image38.png
+   :scale: 50%
+.. |image37| image:: /_static/class1/image39.png
+   :scale: 50%

@@ -8,8 +8,8 @@ Two pieces of software are required to use F5 BIG-IP with OpenStack LBaaS.
   
 The F5 LBaaS driver communicates with F5 OpenStack Agent that will then use F5 iControl REST to update the BIG-IP configuration.
 
-.. image:: ./f5-lbaas-overview.png
-  :scale: 50% 
+.. image:: /_static/class1/f5-lbaas-overview.png
+   :scale: 50% 
 
 The following lab will first guide you through using both the OpenStack GUI/CLI.
 

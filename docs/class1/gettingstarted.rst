@@ -3,9 +3,9 @@ Getting Started
 
 During this lab you will learn how to:
 
-- Install the F5 LBaaS Agent
-- Deploy Basic L4-L7 services using LBaaS
-- Deploy enhanced L4-L7 services using ESD.
+* Install the F5 LBaaS Agent using Ansible
+* Deploy Basic L4-L7 services using LBaaS
+* Deploy enhanced L4-L7 services using ESD.
 
 About OpenStack
 ~~~~~~~~~~~~~~~
@@ -59,53 +59,3 @@ requirements. An undercloud deployment using LBaaS is well suited to
 providing basic services that can be provided in a multi-tenant manner.
 Overcloud is well suited to providing access to features and functions
 that may not be exposed via LBaaS or provide per-tenant services.
-
-Lab Topology
-~~~~~~~~~~~~
-
-The current Lab Environment looks like the following:
-
-|image0|
-
-You will be connecting via RDP to a Windows host to perform all the
-steps in this lab.
-
-Lab Components
-^^^^^^^^^^^^^^
-
-The following table lists VLANS, IP Addresses and Credentials for all
-components:
-
-.. list-table::
-    :widths: 20 40 40
-    :header-rows: 1
-    :stub-columns: 1
-
-    * - **Component**
-      - **VLAN/IP Address(es)**
-      - **Credentials**
-    * - Windows RDP Host
-      - - 10.0.10.50
-      - ``student``/[Viewable in Ravello]
-    * - OpenStack
-      - - 10.0.10.10
-      - ``student`` / [SSH Key]
-    * - BIG-IP
-      - - 10.0.10.20
-      - ``admin`` / ``admin``
-
-Connecting to the Lab Environment
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-Please follow the instructions provided by the instructor to start your
-lab and access your jump host.
-
-.. NOTE::
-   All work for this lab will be performed exclusively from the Windows
-   jumphost. No installation or interaction with your local system is
-   required.
-
-.. |image0| image:: /_static/image2.png
-  :scale: 50%
-
-

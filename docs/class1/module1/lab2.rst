@@ -61,29 +61,29 @@ Once the instance status is "active" on “server-1” then “Log” you should
 |image17|
 
 
-.. |image5| image:: /_static/image7.png
-  :scale: 25%
-.. |image6| image:: /_static/image8.png
-  :scale: 50%
-.. |image7| image:: /_static/image9.png
-  :scale: 50%
-.. |image8| image:: /_static/image10.png
-  :scale: 50%
-.. |image9| image:: /_static/image11.png
-  :scale: 50%
-.. |image10| image:: /_static/image12.png
-  :scale: 50%
-.. |image11| image:: /_static/image13.png
-  :scale: 50%
-.. |image12| image:: /_static/image14.png
-  :scale: 50%
-.. |image13| image:: /_static/image15.png
-  :scale: 50%
-.. |image14| image:: /_static/image16.png
-  :scale: 50%
-.. |image15| image:: /_static/image17.png
-  :scale: 50%
-.. |image16| image:: /_static/image18.png
-  :scale: 50%
-.. |image17| image:: /_static/image19.png
-  :scale: 50%
+.. |image5| image:: /_static/class1/image7.png
+   :scale: 25%
+.. |image6| image:: /_static/class1/image8.png
+   :scale: 50%
+.. |image7| image:: /_static/class1/image9.png
+   :scale: 50%
+.. |image8| image:: /_static/class1/image10.png
+   :scale: 50%
+.. |image9| image:: /_static/class1/image11.png
+   :scale: 50%
+.. |image10| image:: /_static/class1/image12.png
+   :scale: 50%
+.. |image11| image:: /_static/class1/image13.png
+   :scale: 50%
+.. |image12| image:: /_static/class1/image14.png
+   :scale: 50%
+.. |image13| image:: /_static/class1/image15.png
+   :scale: 50%
+.. |image14| image:: /_static/class1/image16.png
+   :scale: 50%
+.. |image15| image:: /_static/class1/image17.png
+   :scale: 50%
+.. |image16| image:: /_static/class1/image18.png
+   :scale: 50%
+.. |image17| image:: /_static/class1/image19.png
+   :scale: 50%

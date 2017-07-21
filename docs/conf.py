@@ -5,10 +5,10 @@
 # ------------
 #
 # REQUIRED: Your class/lab name
-classname = "F5 Private Cloud Solutions - OpenStack"
+classname = "F5 Private Cloud Solutions"
 
 # OPTIONAL: The URL to the GitHub Repository for this class
-github_repo = "https://github.com/f5devcentral/f5-agility-labs-openstack"
+github_repo = "https://github.com/f5devcentral/f5-agility-labs-private-cloud"
 
 # OPTIONAL: Google Analytics
 # googleanalytics_id = 'UA-85156643-4'
