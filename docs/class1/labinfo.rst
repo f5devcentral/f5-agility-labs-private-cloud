@@ -35,8 +35,13 @@ components:
 Connecting to the Lab Environment
 ---------------------------------
 
+
+   
 Please follow the instructions provided by the instructor to start your
-lab and access your jump host.
+lab and access your jump host by clicking on this "rdp" host link.
+
+.. image:: /_static/class1/rdp-link-student.png
+   :scale: 50%
 
 .. NOTE:: All work for this lab will be performed exclusively from the Windows
    jumphost. No installation or interaction with your local system is
