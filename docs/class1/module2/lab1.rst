@@ -24,6 +24,9 @@ then click on “+Create Load Balancer”.
 
 Complete the following information.
 
+.. IMPORTANT::
+   Make sure to use the values below and not the GUI defaults!
+   
 **Load Balancer Details**
 
 +----------+-------------------+
