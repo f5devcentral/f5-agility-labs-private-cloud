@@ -4,7 +4,7 @@ Lab Topology
 Environment setup
 ~~~~~~~~~~~~~~~~~
 
--  Download ansible\_automation\_files.tar from <<link>> to desktop
+-  Download ansible\_automation\_files.tar from https://tinyurl.com/y9zvj6nl to desktop
 
 -  Open WinSCP, click on with windows startup button and then click
    WinSCP
