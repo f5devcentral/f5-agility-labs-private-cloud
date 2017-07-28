@@ -92,7 +92,7 @@ Let us now execute the playbooks on APIC.
 
 #. To execute the playbook run command
 
-   ``ansible-playbook --step playbooks/ aci_tenant_setup.yaml``
+   ``ansible-playbook --step playbooks/aci_tenant_setup.yaml``
 
 #. The following gets created on APIC after playbook (``aci_tenant_setup.yaml``)
    execution
@@ -110,7 +110,7 @@ Let us now execute the playbooks on APIC.
    
 #. To execute the playbook run command
 
-   ``ansible-playbook --step playbooks/ logical_device_cluster.yaml``
+   ``ansible-playbook --step playbooks/logical_device_cluster.yaml``
 
 #. The following gets created on APIC after playbook 
    (``logical_sevice_cluster.yaml``) execution
@@ -150,7 +150,7 @@ Let us now execute the playbooks on APIC.
 
 #. To execute the playbook run command
 
-   ``ansible-playbook --step playbooks/ service_insertion.yaml``
+   ``ansible-playbook --step playbooks/service_insertion.yaml``
 
 #. The following gets created on APIC after playbook (``service_insertion.yaml``)
    execution
