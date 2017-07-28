@@ -4,6 +4,7 @@ Lab Topology
 Install Ansible
 ~~~~~~~~~~~~~~~~~
 -  On dCloud once logged into RDP, open Putty and go to server ‘Tools’ (root/C1sco12345). Run the following commands to install Ansible
+
    -	pip install --upgrade pip
    -	yum install openssl-devel
    -	yum install python-devel
@@ -12,6 +13,7 @@ Install Ansible
    -	pip install ansible
 
 -  Once ansible is installed successfully, run following command from /root directory
+
    -  export ANSIBLE_LIBRARY=/root/library
 
 Environment setup
