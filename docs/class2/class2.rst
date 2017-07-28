@@ -3,8 +3,6 @@ Class 2: Automation of Cisco APIC and F5 BIG-IP using Ansible
 
 **Pre-requisites**
 
--  Ansible is installed and ready to use
-
 -  iApps to be used for service insertion is already present on the
    iWorkflow
 
