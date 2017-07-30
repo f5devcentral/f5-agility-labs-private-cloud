@@ -85,7 +85,7 @@ Follow the steps below to schedule and configure your environment.
    and login using the following credentials: Username:
    **dcloud\\demouser**, Password: **C1sco12345**.
 
-#.  **Option 1**: **(Preferred)** Use **Cisco AnyConnect** [`Show Me
+#. **Option 1**: **(Preferred)** Use **Cisco AnyConnect** [`Show Me
    How <http://dcloud.cisco.com/dCloud/help/install_anyconnect_pc_mac.html>`__]
    and the **local RDP client** on your laptop [`Show Me
    How <http://dcloud.cisco.com/dCloud/help/local_rdp_mac_windows.html>`__].
@@ -94,7 +94,7 @@ Follow the steps below to schedule and configure your environment.
 
    -  From the **Start** menu, click **Desktop**.
 
-#.  **Option 2**: Use the **Cisco dCloud Remote Desktop client with
+#. **Option 2**: Use the **Cisco dCloud Remote Desktop client with
    HTML5**. [`Show Me
    How <http://dcloud.cisco.com/dCloud/help/access_demo_wkstn.html>`__]
 

@@ -171,12 +171,12 @@ Configure APIC Fabric Using Postman–REST Client
    You are automatically be logged in. This is where you will register
    the switches for the APIC.
 
-   .. IMPORTANT:: If you get a status of **403 Forbidden** while performing
-   the activity in this scenario, review the text below for more
-   information on the error. If you see **Token was invalid (Error: Token
-   timeout)**, this means that your session has timed out. You will need to
-   launch the **APIC Login** POST [|image120|] and then proceed with the
-   next POST.
+   .. NOTE:: If you get a status of **403 Forbidden** while performing
+      the activity in this scenario, review the text below for more
+      information on the error. If you see **Token was invalid (Error: Token
+      timeout)**, this means that your session has timed out. You will need to
+      launch the **APIC Login** POST [|image120|] and then proceed with the
+      next POST.
 
    |image121|
 

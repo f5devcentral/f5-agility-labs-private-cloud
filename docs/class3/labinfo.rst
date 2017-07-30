@@ -65,7 +65,7 @@ Environment setup
 
       ``tar xvf ansible_automation_files.tar``
 
-Directory structure 
+Directory structure
 ~~~~~~~~~~~~~~~~~~~
 
 All the files and folders are under /root directory itself. Let’s take a
@@ -94,17 +94,17 @@ performed in this section
    -  Sample ``host_file`` for the dCloud environment
 
       .. code-block:: ini
-  
+
          [iworkflow]
          198.18.128.135
-     
+
          [iworkflow:vars]
          username=admin
          password=C1sco12345
-     
+
          [apic]
          198.18.133.200
-     
+
          [apic:vars]
          username=admin
          password=C1sco12345
@@ -238,5 +238,6 @@ performed in this section
    :scale: 50%
 .. |image3| image:: /_static/class2/image3.png
    :scale: 50%
+.. |image4| image:: /_static/class2/image4.png
+   :scale: 50%
 
-   

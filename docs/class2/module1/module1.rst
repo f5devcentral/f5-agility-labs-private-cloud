@@ -176,7 +176,7 @@ recommended to expose only what is needed to APIC:
 
 ``pool__port``: this is the VIP listening port
 
-.. INFORMATION:: By default, this iApp allows VIP as tenant editable field. When
+.. NOTE:: By default, this iApp allows VIP as tenant editable field. When
    you check VIP listening port as tenant editable, iWorkflow will
    highlight it.
 
