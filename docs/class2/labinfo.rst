@@ -1,242 +1,170 @@
-Lab Topology
-------------
+Demonstration Requirements
+==========================
 
-Install Ansible
-~~~~~~~~~~~~~~~~~
--  On dCloud once logged into RDP, open Putty and go to server ‘Tools’ (root/C1sco12345). Run the following commands to install Ansible
++--------------------+-----------------------+
+|     **Required**   |     **Optional**      |
++====================+=======================+
+| -  Laptop          | -  Cisco AnyConnect   |
++--------------------+-----------------------+
 
-   -	pip install --upgrade pip
-   -	yum install openssl-devel
-   -	yum install python-devel
-   -	yum install gcc
-   -	pip install cryptography
-   -	pip install ansible
+Demonstration Configuration
+---------------------------
 
--  Once ansible is installed successfully, run following command from /root directory
+This demonstration contains preconfigured users and components to
+illustrate the scripted scenarios and features of this Cisco solution.
+All access information needed to complete the demonstration scenario, is
+located in the **Topology** and **Servers** menus of your **active
+demonstration**, and throughout this script.
 
-   -  export ANSIBLE_LIBRARY=/root/library
+-  **Topology Menu**. Click on any server in the topology to display the
+   available server options and credentials.
 
-Environment setup
-~~~~~~~~~~~~~~~~~
+-  **Servers Menu**. Click on |image0| or |image1|\ next to any server
+   name to display the available server options and credentials.
 
--  Download ansible\_automation\_files.tar from https://tinyurl.com/y9zvj6nl to desktop
+Demonstration Topology
+----------------------
 
--  Open WinSCP, click on with windows startup button and then click
-   WinSCP
+The following is the virtual demonstration topology, which consists of
+the following virtual machines:
 
-   |image1|
+-  APIC Simulator – version 2.1(1h)
 
--  On WinSCP
+   -  APIC1, APIC2, APIC3
 
-   -  Hostname: ``tools.dcloud.cisco.com``
+   -  Leaf1 and Leaf2
 
-   -  Port: ``22``
+   -  Spine1 and Spine2
 
-   -  Click on the EDIT button to change username and password
+-  VMware Virtual Center Server 5.5 Appliance
 
-      -  Username: ``root``
+-  F5 iWorkflow – release 2.0.2
 
-      -  Password: ``C1sco12345``
+-  F5 BIG-IP – release 12.0.0 HF4
 
-   -  Click Save
+-  VMware ESXi 5.5 Host 1
 
-   -  Click login
+-  VMware ESXi 5.5 Host 2
 
-   -  In the right hand pane click on the ``/home/user01/Scripts`` tab,
-      change it to ``/root``
+-  Workstation – Windows 8
 
-      |image3|
+-  NetApp EDGE Storage Appliance – ONTAP 8.2
 
-   -  Click OK
+-  Linux Tools Repository (Ubuntu 12.04)
 
-   -  Similarly change the left hand pane from ``C:\\Scripts`` to
-      ``C:\\Users\\demouser\\Desktop``
+|image2|
 
-   -  Copy the download tar file from the desktop to the root directory
-      on the ansible host
+This demonstration contains preconfigured users and components to
+illustrate the scripted scenarios and features. All access information
+needed to complete the scripted scenarios is located in the **Topology**
+and **Servers** menus of your **active demonstration**, and throughout
+this script.
 
--  SSH to the ‘Tools’ host using Putty
+Demonstration Preparation
+-------------------------
 
-   -  Username: ``root``
+Follow the steps below to schedule and configure your environment.
 
-   -  Password: ``C1sco12345``
+#. Browse to `dcloud.cisco.com <http://dcloud.cisco.com>`__, choose the
+   location closest to you, and then login with your Cisco.com
+   credentials.
 
-   -  Untar the ``ansible_automation_files.tar`` file using command:
+#. Schedule a session. [`Show Me
+   How <http://dcloud.cisco.com/dCloud/help/sched_demo.html>`__].
 
-      ``tar xvf ansible_automation_files.tar``
+#. Test your bandwidth from the demonstration location before performing
+   any scenario. [`Show Me
+   How <http://dcloud.cisco.com/dCloud/help/connect_test.html>`__]
 
-Directory structure 
-~~~~~~~~~~~~~~~~~~~
+#. Verify your session has a status of **Active** under **My
+   Demonstrations** on the **My Dashboard** page in the Cisco dCloud UI.
 
-All the files and folders are under /root directory itself. Let’s take a
-look at the files and directories. This is for reading and familiarizing
-yourself with the playbooks and files we are going to use. No task to be
-performed in this section
+#.  It may take up to **15 minutes for your demo to become active**.
 
-|image4|
+#. Access the workstation named **wkst1** located at **198.18.133.36**
+   and login using the following credentials: Username:
+   **dcloud\\demouser**, Password: **C1sco12345**.
 
--  File ``ansible.cfg``
+#.  **Option 1**: **(Preferred)** Use **Cisco AnyConnect** [`Show Me
+   How <http://dcloud.cisco.com/dCloud/help/install_anyconnect_pc_mac.html>`__]
+   and the **local RDP client** on your laptop [`Show Me
+   How <http://dcloud.cisco.com/dCloud/help/local_rdp_mac_windows.html>`__].
 
-   -  Ansible configuration file where you can set ansible environment
-      variables, for more information refer to link
-      http://docs.ansible.com/ansible/intro_configuration.html
+   -  Accept any certificates or warnings.
 
--  File ``host_file``
+   -  From the **Start** menu, click **Desktop**.
 
-   -  This file is the ansible inventory file, which stored information
-      about the host(s) that we want to run the playbook against, and
-      variable information pertaining to those hosts. For more
-      information about the inventory file refer to link
-      http://docs.ansible.com/ansible/intro_inventory.html#inventory
+#.  **Option 2**: Use the **Cisco dCloud Remote Desktop client with
+   HTML5**. [`Show Me
+   How <http://dcloud.cisco.com/dCloud/help/access_demo_wkstn.html>`__]
 
-   -  The host file is specific to your environment
+   -  Accept any certificates or warnings.
 
-   -  Sample ``host_file`` for the dCloud environment
+   -  From the **Start** menu, click **Desktop**.
 
-      .. code-block:: ini
-  
-         [iworkflow]
-         198.18.128.135
-     
-         [iworkflow:vars]
-         username=admin
-         password=C1sco12345
-     
-         [apic]
-         198.18.133.200
-     
-         [apic:vars]
-         username=admin
-         password=C1sco12345
+#. Start Menu
 
--  Directory ``playbooks`` – This directory contains
+   |image3|
 
-   -  All the playbooks we are going to run in this lab
+#. The fabric discovery is automatically started at demo setup.
+   Double-click the **APIC Login** icon |image4| and login
+   (``admin``/``C1sco12345``).
 
-      -  ``iworkflow_setup.yaml`` – Configure setting on iWorkflow
+#. Select **Fabric** from the top menu.
 
-      -  ``aci_tenant_setup.yaml`` – Create a tenant and related
-         parameters on APIC
+#. Select **Inventory** from the top sub-menu.
 
-      -  ``logical_device_cluster.yaml`` – Create a logical device cluster
-         on APIC (this enabled communication of APIC with BIG-IP)
+#. In the left menu, click **Fabric Membership** and check that you have
+   the 4 devices populated as shown in Figure 3. (IP addresses may
+   vary.)
 
-      -  ``service_insertion.yaml`` - Configure service insertion on APIC
+.. NOTE:: The fabric discovery can take up to 15 minutes to complete. If
+   you login before 15 minutes have passed, all devices may not be fully
+   discovered.
 
-      -  ``aci_delete_service.yaml`` – Clean up of the configuration done
-         on APIC
+#. Completed Fabric Membership
 
-   -  The variable file which we are going to edit to customize it to
-      our needs
+   |image5|
 
-      -  This is a sample input to the variable file, you can modify it
-         to fit your environment
+.. NOTE:: To demonstrate Fabric Discovery, reset the APIC Simulator (see
+   `Appendix A <#Reset_APIC_Simulator>`__.) If only TEP-1-101 is present at
+   login, see `Appendix B <#Fabric_Script>`__ to discover the Fabric.
 
-         +------------------------------------+--------------------------------------+
-         | bigip\_ip                          | "198.18.128.130"                     |
-         +====================================+======================================+
-         | bigip\_username                    | "admin"                              |
-         +------------------------------------+--------------------------------------+
-         | bigip\_password                    | "C1sco12345"                         |
-         +------------------------------------+--------------------------------------+
-         | bigip\_hostname                    | "bigip1.dcloud.cisco.com"            |
-         +------------------------------------+--------------------------------------+
-         |                                    |                                      |
-         +------------------------------------+--------------------------------------+
-         | iworkflow\_ip                      | "198.18.128.135"                     |
-         +------------------------------------+--------------------------------------+
-         | iworkflow\_username                | "admin"                              |
-         +------------------------------------+--------------------------------------+
-         | iworkflow\_password                | "C1sco12345"                         |
-         +------------------------------------+--------------------------------------+
-         |                                    |                                      |
-         +------------------------------------+--------------------------------------+
-         | tenant\_name                       | "Demo"                               |
-         +------------------------------------+--------------------------------------+
-         | context\_name                      | "{{tenant\_name}}\_ctx1"             |
-         +------------------------------------+--------------------------------------+
-         | app\_profile\_name                 | "App\_profile"                       |
-         +------------------------------------+--------------------------------------+
-         | provider\_bd\_name                 | "{{tenant\_name}}\_BDApp"            |
-         +------------------------------------+--------------------------------------+
-         | provider\_ip                       | "192.168.10.220"                     |
-         +------------------------------------+--------------------------------------+
-         | provider\_mask                     | "24"                                 |
-         +------------------------------------+--------------------------------------+
-         | provider\_epg\_name                | "prov\_EPG\_app"                     |
-         +------------------------------------+--------------------------------------+
-         | consumer\_bd\_name                 | "{{tenant\_name}}\_BDWeb"            |
-         +------------------------------------+--------------------------------------+
-         | consumer\_ip                       | "10.10.10.220"                       |
-         +------------------------------------+--------------------------------------+
-         | consumer\_mask                     | "24"                                 |
-         +------------------------------------+--------------------------------------+
-         | consumer\_epg\_name                | "cons\_EPG\_web"                     |
-         +------------------------------------+--------------------------------------+
-         |                                    |                                      |
-         +------------------------------------+--------------------------------------+
-         | contract\_name                     | "web2app-demo-contract"              |
-         +------------------------------------+--------------------------------------+
-         | filter\_name                       | "{{contract\_name}}\_filter"         |
-         +------------------------------------+--------------------------------------+
-         | subject\_name1                     | "http"                               |
-         +------------------------------------+--------------------------------------+
-         | subject\_name2                     | "https"                              |
-         +------------------------------------+--------------------------------------+
-         |                                    |                                      |
-         +------------------------------------+--------------------------------------+
-         | iworkflow\_servicetemplate\_name   | "SimpleHTTP"                         |
-         +------------------------------------+--------------------------------------+
-         | devicePackage\_name                | "dCloudConnector"                    |
-         +------------------------------------+--------------------------------------+
-         | downloaded\_devicePackage\_name    | "F5DevicePackageSimple"              |
-         +------------------------------------+--------------------------------------+
-         | logicalDeviceCluster\_name         | "StandaloneBIGIP"                    |
-         +------------------------------------+--------------------------------------+
-         | SGtemplate\_name                   | "SimpleHTTP\_ServiceGraphTemplate"   |
-         +------------------------------------+--------------------------------------+
-         |                                    |                                      |
-         +------------------------------------+--------------------------------------+
-         | external\_selfip                   | "10.10.10.120"                       |
-         +------------------------------------+--------------------------------------+
-         | external\_netmask                  | "255.255.255.0"                      |
-         +------------------------------------+--------------------------------------+
-         | internal\_selfip                   | "192.168.10.120"                     |
-         +------------------------------------+--------------------------------------+
-         | internal\_netmask                  | "255.255.255.0"                      |
-         +------------------------------------+--------------------------------------+
-         | vip\_ip                            | "10.10.10.100"                       |
-         +------------------------------------+--------------------------------------+
-         | vip\_port                          | "80"                                 |
-         +------------------------------------+--------------------------------------+
-         | poolMember\_ip                     | "192.168.10.140"                     |
-         +------------------------------------+--------------------------------------+
-         | lb\_method                         | "round-robin"                        |
-         +------------------------------------+--------------------------------------+
+#. Double-click the **VI Login** icon |image6| and login with the
+   following credentials: Username: **demouser**, Password:
+   **C1sco12345**. (If password is grayed out, click **Login**.)
 
--  Directory ``aci_posts``
+#. Check that the **F5 iWorkflow and BIG-IP** virtual machine is present
+   and running as below.
 
-   -  This directory has all the aci posts we are going to execute on
-      the APIC
+#. Virtual Center Inventory
 
-   -  Each post is a j2 (jinja2) template file. This template file
-      contains variables which are going to be substituted at run time
-      from information present in the variable file. The XML file then
-      created after the substitution will be then run on the APIC
+   |image7|
 
--  JSON blob for creating a service template on iWorkflow
+.. NOTE:: If the F5 BIG-IP and iWorkflow VMs are not present in the
+   L4-L7 Services Resource Pool, `add it manually <#Add_BIGIP>`__.
 
--  Directory ``library``
-
-   -  This contains the python files which are responsible for running
-      code for modules. For this lab we have the one aci module
-      ``aci_rest.py`` which will be used to run the posts on the APIC
-
-.. |image1| image:: /_static/class2/image1.png
-   :scale: 50%
-.. |image2| image:: /_static/class2/image2.png
-   :scale: 50%
-.. |image3| image:: /_static/class2/image3.png
-   :scale: 50%
-
-   
+.. |image0| image:: /_static/class2/image5.png
+   :width: 0.10000in
+   :height: 0.11667in
+.. |image1| image:: /_static/class2/image6.png
+   :width: 0.12500in
+   :height: 0.13333in
+.. |image2| image:: /_static/class2/image7.png
+   :width: 5.14211in
+   :height: 3.40030in
+.. |image3| image:: /_static/class2/image8.png
+   :width: 6.50000in
+   :height: 1.71389in
+.. |image4| image:: /_static/class2/image9.png
+   :width: 0.49167in
+   :height: 0.55000in
+.. |image5| image:: /_static/class2/image10.png
+   :width: 6.34167in
+   :height: 1.34167in
+.. |image6| image:: /_static/class2/image11.png
+   :width: 0.40833in
+   :height: 0.55000in
+.. |image7| image:: /_static/class2/image12.png
+   :width: 4.21637in
+   :height: 3.08065in
