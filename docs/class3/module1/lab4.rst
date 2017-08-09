@@ -40,5 +40,5 @@ following tasks
 
    |image26|
 
-.. |image25| image:: /_static/class2/image25.png   
-.. |image26| image:: /_static/class2/image26.png
+.. |image25| image:: /_static/class3/image25.png   
+.. |image26| image:: /_static/class3/image26.png

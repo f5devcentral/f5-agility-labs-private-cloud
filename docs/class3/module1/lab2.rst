@@ -212,21 +212,21 @@ the APIC, iWorkflow, BIG-IP
 
      |image20| 
 
-.. |image4| image:: /_static/class2/image4.png
-.. |image5| image:: /_static/class2/image5.png
+.. |image4| image:: /_static/class3/image4.png
+.. |image5| image:: /_static/class3/image5.png
    :scale: 50%
-.. |image6| image:: /_static/class2/image6.png
-.. |image7| image:: /_static/class2/image7.png
-.. |image8| image:: /_static/class2/image8.png
-.. |image9| image:: /_static/class2/image9.png
-.. |image10| image:: /_static/class2/image10.png
-.. |image11| image:: /_static/class2/image11.png
-.. |image12| image:: /_static/class2/image12.png
-.. |image13| image:: /_static/class2/image13.png
-.. |image14| image:: /_static/class2/image14.png
-.. |image15| image:: /_static/class2/image15.png
-.. |image16| image:: /_static/class2/image16.png
-.. |image17| image:: /_static/class2/image17.png
-.. |image18| image:: /_static/class2/image18.png
-.. |image19| image:: /_static/class2/image19.png
-.. |image20| image:: /_static/class2/image20.png
+.. |image6| image:: /_static/class3/image6.png
+.. |image7| image:: /_static/class3/image7.png
+.. |image8| image:: /_static/class3/image8.png
+.. |image9| image:: /_static/class3/image9.png
+.. |image10| image:: /_static/class3/image10.png
+.. |image11| image:: /_static/class3/image11.png
+.. |image12| image:: /_static/class3/image12.png
+.. |image13| image:: /_static/class3/image13.png
+.. |image14| image:: /_static/class3/image14.png
+.. |image15| image:: /_static/class3/image15.png
+.. |image16| image:: /_static/class3/image16.png
+.. |image17| image:: /_static/class3/image17.png
+.. |image18| image:: /_static/class3/image18.png
+.. |image19| image:: /_static/class3/image19.png
+.. |image20| image:: /_static/class3/image20.png

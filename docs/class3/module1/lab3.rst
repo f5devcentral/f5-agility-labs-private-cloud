@@ -26,7 +26,7 @@ following task
 
    |image24|
 
-.. |image21| image:: /_static/class2/image21.png
-.. |image22| image:: /_static/class2/image22.png
-.. |image23| image:: /_static/class2/image23.png
-.. |image24| image:: /_static/class2/image24.png
+.. |image21| image:: /_static/class3/image21.png
+.. |image22| image:: /_static/class3/image22.png
+.. |image23| image:: /_static/class3/image23.png
+.. |image24| image:: /_static/class3/image24.png
