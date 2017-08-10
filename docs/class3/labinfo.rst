@@ -234,8 +234,6 @@ performed in this section
 
 .. |image1| image:: /_static/class3/image1.png
    :scale: 50%
-.. |image2| image:: /_static/class3/image2.png
-   :scale: 50%
 .. |image3| image:: /_static/class3/image3.png
    :scale: 50%
 .. |image4| image:: /_static/class3/image4.png
