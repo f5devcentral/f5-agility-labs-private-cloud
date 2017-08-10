@@ -36,9 +36,9 @@ following tasks
    and there will be no device group pertaining to the logical device
    cluster
 
-   |image25|
-
    |image26|
 
-.. |image25| image:: /_static/class3/image25.png   
+   |image27|
+
 .. |image26| image:: /_static/class3/image26.png
+.. |image27| image:: /_static/class3/image27.png

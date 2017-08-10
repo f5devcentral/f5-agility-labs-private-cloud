@@ -12,9 +12,9 @@ following task
 
    Before modification:
 
-   |image21|
-
    |image22|
+
+   |image23|
 
 #. To execute the playbook run command
 
@@ -22,11 +22,11 @@ following task
 
    After running the playbook for modification:
 
-   |image23|
-
    |image24|
 
-.. |image21| image:: /_static/class3/image21.png
+   |image25|
+
 .. |image22| image:: /_static/class3/image22.png
 .. |image23| image:: /_static/class3/image23.png
 .. |image24| image:: /_static/class3/image24.png
+.. |image25| image:: /_static/class3/image25.png
